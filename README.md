@@ -26,7 +26,7 @@ This repository contains a PyTorch code for implementing and training ROAM.
 <br/> 
 ### Datasets
 **Whole Brain data**
-- [MALC](http://www.neuromorphometrics.com/2012_MICCAI_Challenge_Data.html) : consists of 30 T1 MRI volumes; 15 volumes split into 3 labeled (∼500 slices), 9 unlabeled (∼1500 slices), 3 validation (∼500 slices), and 15 testing volumes (∼2500 slices). The data conversion for this dataset is done as in [QuickNAT: Abhijit Guha Roy et al](https://github.com/ai-med/quickNAT_pytorch) <br/>
+- [MALC](http://www.neuromorphometrics.com/2012_MICCAI_Challenge_Data.html) : consists of 30 T1 MRI volumes; 15 volumes split into 3 labeled (∼500 slices), 9 unlabeled (∼1500 slices), 3 validation (∼500 slices), and 15 testing volumes (∼2500 slices). The data conversion for this dataset is done as in [QuickNAT: Roy et al](https://github.com/ai-med/quickNAT_pytorch) <br/>
 
 **COVID-19 data**
 - 80 CT slices of COVID-19: download data from [here](http://medicalsegmentation.com/covid19/)
