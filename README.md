@@ -45,28 +45,28 @@ python train_ROAM_Covid_Semi.py --data_path='your data path' --checkpoint_dir='p
 ### Evaluation
 - To calculte the dice score (brain segmentation).
 ```
-python calculate_dice.py --data_path='your data path' --checkpoint_dir='path to the trained modelL' --model_name='best_model_Img_wts.pt'
+python calculate_dice.py --data_path='your data path' --checkpoint_dir='path to the trained model' --model_name='best_model_Img_wts.pt'
 ```
-- To calculte the hausdorff and mean surface distances (brain segmentation models).
+- To calculte the hausdorff and mean surface distances (brain segmentation).
 ```
-python calculateHD_MSD.py --data_path='your data path' --checkpoint_dir='path to the trained modelL' --model_name='best_model_Img_wts.pt'
+python calculateHD_MSD.py --data_path='your data path' --checkpoint_dir='path to the trained model' --model_name='best_model_Img_wts.pt'
 ```
 - To calculte the dice score (COVID-19).
 ```
-python calculate_dice_COVID.py --data_path='your data path' --checkpoint_dir='path to the trained modelL' --model_name='best_model_Img_wts.pt'
+python calculate_dice_COVID.py --data_path='your data path' --checkpoint_dir='path to the trained model' --model_name='best_model_Img_wts.pt'
 ```
 ### Prediction 
 - To generate the predictions (brain segmentation).
 ```
-python generate_prediction.py --data_path='your data path' --checkpoint_dir='path to the trained modelL' --model_name='best_model_Img_wts.pt'
+python generate_prediction.py --data_path='your data path' --checkpoint_dir='path to the trained model' --model_name='best_model_Img_wts.pt'
 ```
 - To generate the predictions (COVID-19 segmentation for CT individual slices).
 ```
-python generate_prediction_COVID.py --data_path='your data path' --checkpoint_dir='path to the trained modelL' --model_name='best_model_Img_wts.pt'
+python generate_prediction_COVID.py --data_path='your data path' --checkpoint_dir='path to the trained model' --model_name='best_model_Img_wts.pt'
 ```
 - To generate the predictions (COVID-19 segmentation for CT volume).
 ```
-python generate_prediction_COVID_Vol.py --data_path='your data path' --checkpoint_dir='path to the trained modelL' --model_name='best_model_Img_wts.pt'
+python generate_prediction_COVID_Vol.py --data_path='your data path' --checkpoint_dir='path to the trained model' --model_name='best_model_Img_wts.pt'
 ```
 # Whole Brain Segmentation
 In this package we opt for MRI a publicly available datasets; (i) [22], which
