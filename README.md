@@ -49,19 +49,7 @@ python train_ROAM_Covid_Semi.py --data_path='your data path' --checkpoint_dir='p
 - [roam_malc_smi_lyrI](trainedmodels/roam_malc_smi_lyrI.pt): our model trained on 3L/9U vols. from MALC dataset on semi-supervised manner for whole brain segmentation, the data is mixed-up at the input layer (MixMatch approach).
 - [roam_covid_sup](trainedmodels/roam_covid_sup.pt): our model trained on 80 images from 60 CT scans on supervised manner for COVID-19 lung segmentation. The used data is found [here](http://medicalsegmentation.com/covid19/) 
 - [roam_covid_semi](trainedmodels/roam_covid_semi.pt): our model trained on 80 images from 60 CT scans on semi-supervised manner for COVID-19 lung segmentation. The labeled data is found [here](http://medicalsegmentation.com/covid19/), the unlabeled data is found [here](https://github.com/UCSD-AI4H/COVID-CT/tree/master/Images-processed)
-### Evaluation
-- To calculte the dice score (brain segmentation).
-```
-python calculate_dice.py --data_path='your data path' --checkpoint_dir='path to the trained model' --model_name='best_model_Img_wts.pt'
-```
-- To calculte the hausdorff and mean surface distances (brain segmentation).
-```
-python calculateHD_MSD.py --data_path='your data path' --checkpoint_dir='path to the trained model' --model_name='best_model_Img_wts.pt'
-```
-- To calculte the dice score (COVID-19).
-```
-python calculate_dice_COVID.py --data_path='your data path' --checkpoint_dir='path to the trained model' --model_name='best_model_Img_wts.pt'
-```
+
 ### Prediction 
 - To generate the predictions (brain segmentation).
 ```
@@ -75,6 +63,25 @@ python generate_prediction_COVID.py --data_path='your data path' --checkpoint_di
 ```
 python generate_prediction_COVID_Vol.py --data_path='your data path' --checkpoint_dir='path to the trained model' --model_name='best_model_Img_wts.pt'
 ```
+### Evaluation
+- To calculte the dice score (brain segmentation).
+```
+python calculate_dice.py --data_path='your data path' --checkpoint_dir='path to the trained model' --model_name='best_model_Img_wts.pt'
+```
+- To calculte the hausdorff and mean surface distances (brain segmentation).
+```
+python calculateHD_MSD.py --data_path='your data path' --checkpoint_dir='path to the trained model' --model_name='best_model_Img_wts.pt'
+```
+- To calculte the dice score (COVID-19).
+```
+python calculate_dice_COVID.py --data_path='your data path' --checkpoint_dir='path to the trained model' --model_name='best_model_Img_wts.pt'
+```
+### Datasets
+**Whole Brain data**
+- [MALC] (http://www.neuromorphometrics.com/2012_MICCAI_Challenge_Data.html) : consists of 30 T1 MRI volumes; 15 volumes split into 3 labeled (∼500 slices), 9 unlabeled (∼1500 slices), 3 validation (∼500 slices), and 15 testing volumes (∼2500 slices). <br/>
+The data conversion for MALC dataset is done as in [QuickNAT: Abhijit Guha Roy et al](https://github.com/ai-med/quickNAT_pytorch)
+**COVID-19 data**
+The labeled data is found [here](http://medicalsegmentation.com/covid19/), the unlabeled data is found [here](https://github.com/UCSD-AI4H/COVID-CT/tree/master/Images-processed)
 # Whole Brain Segmentation
 **Quantitative results on MALC dataset for whole brain segmentation**
 <img src="images/dice_results.png"> <br/>
@@ -97,8 +104,5 @@ See also other works from [**MedIA**](http://campar.in.tum.de/Chair/ResearchIssu
 
 <a rel="license" href="https://creativecommons.org/licenses/by-nc/2.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-nc/2.0/88x31.png" /></a>
 
-## Acknowledgments
-
-The data conversion for MALC dataset is done as in [QuickNAT: Abhijit Guha Roy et al](https://github.com/ai-med/quickNAT_pytorch)
 
 
