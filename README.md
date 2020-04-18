@@ -69,9 +69,10 @@ python generate_prediction_COVID.py --data_path='your data path' --checkpoint_di
 python generate_prediction_COVID_Vol.py --data_path='your data path' --checkpoint_dir='path to the trained model' --model_name='best_model_Img_wts.pt'
 ```
 # Whole Brain Segmentation
-Mean (Median) ± Std. of different evaluation metrics are reported on the MALC testing set for ROAM (ours) at different settings with comparison with different SSL methods and the baselines models. 
-<img src="images/dice_results.png" alt="Italian Trulli">
-
+## Quantitative results on MALC dataset for whole brain segmentation
+<img src="images/dice_results.png">
+## Qualitative results on MALC/IBSR/CANDI datasets for whole brain segmentation
+<img src="images/QaulitativeAll.png">
 # COVID-19 Segmentation
 
 ## Authors
