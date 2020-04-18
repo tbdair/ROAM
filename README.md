@@ -69,12 +69,15 @@ python generate_prediction_COVID.py --data_path='your data path' --checkpoint_di
 python generate_prediction_COVID_Vol.py --data_path='your data path' --checkpoint_dir='path to the trained model' --model_name='best_model_Img_wts.pt'
 ```
 # Whole Brain Segmentation
-## Quantitative results on MALC dataset for whole brain segmentation
+### Quantitative results on MALC dataset for whole brain segmentation
 <img src="images/dice_results.png">
-## Qualitative results on MALC/IBSR/CANDI datasets for whole brain segmentation
+### Qualitative results on MALC/IBSR/CANDI datasets for whole brain segmentation
 <img src="images/QaulitativeAll.png">
-# COVID-19 Segmentation
 
+# COVID-19 Segmentation
+### Sample predictions on CT COVID-19 
+Our model trained on 80 images from 60 CT scans on supervised manner for COVID-19 lung segmentation. The labeled data is found [here](http://medicalsegmentation.com/covid19/), the unlabeled data is found [here](https://github.com/UCSD-AI4H/COVID-CT/tree/master/Images-processed)
+<img src="images/COVID-19.jpeg">
 ## Authors
 
 * **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
