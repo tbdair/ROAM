@@ -70,13 +70,13 @@ python generate_prediction_COVID_Vol.py --data_path='your data path' --checkpoin
 ```
 # Whole Brain Segmentation
 ### Quantitative results on MALC dataset for whole brain segmentation
-<img src="images/dice_results.png">
+<img src="images/dice_results.png"> <br/>
 ### Qualitative results on MALC/IBSR/CANDI datasets for whole brain segmentation
 <img src="images/QaulitativeAll.png">
 
 # COVID-19 Segmentation
 ### Sample predictions on CT COVID-19 
-Our model trained on 80 images from 60 CT scans on supervised manner for COVID-19 lung segmentation. The labeled data is found [here](http://medicalsegmentation.com/covid19/), the unlabeled data is found [here](https://github.com/UCSD-AI4H/COVID-CT/tree/master/Images-processed)
+Our model trained on 80 images from 60 CT scans on supervised manner for COVID-19 lung segmentation. The labeled data is found [here](http://medicalsegmentation.com/covid19/), the unlabeled data is found [here](https://github.com/UCSD-AI4H/COVID-CT/tree/master/Images-processed) <br/>
 <img src="images/COVID-19.jpeg">
 ## Authors
 
