@@ -92,7 +92,7 @@ python calculate_dice_COVID.py --data_path='your data path' --checkpoint_dir='pa
 <img src="images/QaulitativeAll.png">
 
 # COVID-19 Segmentation
-_ _ Not validated for clinical use _ _ 
+***Not validated for clinical use*** <br/> 
 ## Sample predictions on CT COVID-19 <br/>
 **Our models (S) and (SS) are trained in supervised and semi-supervised manners respectively.**
 <img src="images/COVID-19.jpeg">
