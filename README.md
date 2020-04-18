@@ -1,10 +1,8 @@
+# [ROAM: Random Layer Mixup for Semi-Supervised Learning in Medical Imaging](https://arxiv.org/pdf/2003.09439.pdf)
+## [Tariq Bdair](http://campar.in.tum.de/Main/TariqBdair), [Nassir Navab](http://campar.in.tum.de/Main/NassirNavab), [Shadi Albarqouni](https://albarqouni.github.io/)
+Medical image segmentation is one of the major challenges addressed by machine learning methods. Yet, deep learning methods profoundly depend on a huge amount of annotated data which is time-consuming and costly. Though semi-supervised learning methods approach this problem by leveraging an abundant amount of unlabeled data along with a small amount of labeled data in the training process. Recently, MixUp regularizer has been successfully introduced to semi-supervised learning methods showing superior performance. MixUp augments the model with new data points through linear interpolation of the data at the input space. In this paper, we argue that this option is limited, instead, we propose ROAM, a RandOm lAyer Mixup, which encourages the network to be less confident for interpolated data points at randomly selected space. Hence, avoids over-fitting and enhances the generalization ability. We validate our method on publicly available datasets on whole-brain image segmentation (MALC) achieving state-of-the-art results in fully supervised (89.8%) and semi-supervised (87.2%) settings with relative improvement up to 2.75% and 16.73%, respectively.
 
-# ROAM: Random Layer Mixup for Semi-Supervised Learning in Medical Imaging
-Medical image segmentation is one of the major challenges addressed by machine learning methods. Yet, deep learning methods profoundly depend on a huge amount of annotated data which is time-consuming and costly. Though semi-supervised learning methods approach this problem by leveraging an abundant amount of unlabeled data along with a small amount of labeled data in the training process. Recently, MixUp regularizer has been successfully introduced to semi-supervised learning methods showing superior performance. MixUp augments the model with new data points through linear interpolation of the data at the input space. In this paper, we argue that this option is limited, instead, we propose ROAM, a random layer mixup, which encourages the network to be less confident for interpolated data points at randomly selected space. Hence, avoids over-fitting and enhances the generalization ability. We validate our method on publicly available datasets on whole-brain image segmentation (MALC) achieving state-of-the-art results in fully supervised (89.8%) and semi-supervised (87.2%) settings with relative improvement up to 2.75% and 16.73%, respectively.
-<br/> -- Link to the paper
-[https://arxiv.org/pdf/2003.09439.pdf](https://arxiv.org/pdf/2003.09439.pdf) 
-
-If you use our code, please cite:
+If you found our code useful, please cite:
 ```
 @article{bdair2020roam,
   title={ROAM: Random Layer Mixup for Semi-Supervised Learning in Medical Imaging},
@@ -16,7 +14,7 @@ If you use our code, please cite:
 ## Getting Started
 
 This repository contains a PyTorch code for implementing and training ROAM. 
-<br/> Also, this package provides trained models for MRI whole brain segmentation,  and CT COVID-19 lung segmentation. 
+<br/> Also, this package provides trained models for Whole brain MRI segmentation,  and COVID-19 pathologies segmentation in Thorax CT. 
 - [Whole Brain Segmentation](#Whole-Brain-Segmentation)
 - [COVID-19 Segmentation](#COVID-19-Segmentation)
 
@@ -91,16 +89,16 @@ python generate_prediction_COVID_Vol.py --data_path='your data path' --checkpoin
 ## Authors
 
 * [**Tariq Bdair**](http://campar.in.tum.de/Main/TariqBdair)
-* [**Dr. Shadi Albarqouni**](http://campar.in.tum.de/Main/TariqBdair)
+* [**Dr. Shadi Albarqouni**](https://albarqouni.github.io/)
 
 See also other works from [**MedIA**](http://campar.in.tum.de/Chair/ResearchIssueMedicalImage) group.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+<a rel="license" href="https://creativecommons.org/licenses/by-nc/2.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-nc/2.0/88x31.png" /></a>
 
 ## Acknowledgments
 
-The data ocversion for MALC dataset is done as in **QuickNAT: Abhijit Guha Roy et al**
+The data conversion for MALC dataset is done as in [QuickNAT: Abhijit Guha Roy et al](https://github.com/ai-med/quickNAT_pytorch)
 
 
