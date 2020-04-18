@@ -101,6 +101,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-The data ocversion for MALC/IBSR.CANDI datasets is done as in **QuickNAT: Abhijit Guha Roy et al**
+The data ocversion for MALC/IBSR/CANDI datasets is done as in **QuickNAT: Abhijit Guha Roy et al**
 
 
