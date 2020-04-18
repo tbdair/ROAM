@@ -76,14 +76,15 @@ python generate_prediction_COVID_Vol.py --data_path='your data path' --checkpoin
 <img src="images/QaulitativeAll.png">
 
 # COVID-19 Segmentation
-**Sample predictions on CT COVID-19** 
+**Sample predictions on CT COVID-19** <br/>
 _ _Our models (S) and (SS) are trained in supervised and semi-supervised manners respectively. The labeled data is found [here](http://medicalsegmentation.com/covid19/), the unlabeled data is found [here](https://github.com/UCSD-AI4H/COVID-CT/tree/master/Images-processed)_ _ <br/>
 <img src="images/COVID-19.jpeg">
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Tariq Bdair** - *Initial work* - [PurpleBooth](http://campar.in.tum.de/Main/TariqBdair)
+* **Dr. Shadi Albarqouni** - *Initial work* - [PurpleBooth](http://campar.in.tum.de/Main/TariqBdair)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also MedIA group [contributors](http://campar.in.tum.de/Chair/ResearchIssueMedicalImage).
 
 ## License
 
@@ -91,8 +92,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+The data ocversion for MALC dataset is done as in done by **QuickNAT: Abhijit Guha Roy et al**
 
 
