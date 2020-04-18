@@ -29,8 +29,8 @@ This repository contains a PyTorch code for implementing and training ROAM.
 - [MALC](http://www.neuromorphometrics.com/2012_MICCAI_Challenge_Data.html) : consists of 30 T1 MRI volumes; 15 volumes split into 3 labeled (∼500 slices), 9 unlabeled (∼1500 slices), 3 validation (∼500 slices), and 15 testing volumes (∼2500 slices). The data conversion for this dataset is done as in [QuickNAT: Roy et al](https://github.com/ai-med/quickNAT_pytorch) <br/>
 
 **COVID-19 data**
-- 80 CT slices of COVID-19: download data from [here](http://medicalsegmentation.com/covid19/)
-- 200 CT slices of COVID-19 and non COVIDT-19 cases: download data from [here](https://github.com/UCSD-AI4H/COVID-CT/tree/master/Images-processed)
+- 100 CT slices of COVID-19: used as labeled data (80/20 split for training & validation respectively), download data from [here](http://medicalsegmentation.com/covid19/)
+- 200 CT slices of COVID-19 and non COVIDT-19 cases: used as unlabeled data download data from [here](https://github.com/UCSD-AI4H/COVID-CT/tree/master/Images-processed)
 
 ### Training 
 - To train our model in a supervised manner for whole-brain segmentation, run the following code..
@@ -106,5 +106,6 @@ See also other works from [**MedIA**](http://campar.in.tum.de/Chair/ResearchIssu
 
 <a rel="license" href="https://creativecommons.org/licenses/by-nc/2.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-nc/2.0/88x31.png" /></a>
 
-
+## Acknowledgment
+The authors acknowledge [MedSeg](http://medicalsegmentation.com/covid19/) for providing the labeled data for 100 CT images and making it publically available.
 
