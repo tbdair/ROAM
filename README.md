@@ -18,9 +18,21 @@ This repository contains a PyTorch code for implementing and training ROAM.
 -PyTorch
 
 ### Training 
-- To train our model in supervised manner for whole brain segmentation, run the following code.
+- To train our model in a supervised manner for whole-brain segmentation, run the following code..
 ```
 python train_ROAM_MALC_Supervised.py --data_path='your data path' --checkpoint_dir='path to save the trained model'
+```
+- To train our model in a semi-supervised manner for whole-brain segmentation, run the following code..
+```
+python train_ROAM_MALC_Semi.py --data_path='your data path' --checkpoint_dir='path to save the trained model'
+```
+- To train our model in a supervised manner for COVID-19 segmentation, run the following code..
+```
+python train_ROAM_Covid_Supervised.py --data_path='your data path' --checkpoint_dir='path to save the trained model'
+```
+- To train our model in a semi-supervised manner for  COVID-19 segmentation, run the following code..
+```
+python train_ROAM_Covid_Semi.py --data_path='your data path' --checkpoint_dir='path to save the trained model'
 ```
 ### Evaluation
 
