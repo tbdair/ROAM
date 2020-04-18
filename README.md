@@ -8,13 +8,13 @@ Medical image segmentation is one of the major challenges addressed by machine l
 
 This repository contains a PyTorch code for implementing and training ROAM. 
 <br/> Also, this package provides trained models for MRI whole brain segmentation,  and CT COVID-19 lung segmentation. 
-- [Whole Brain Segmentation](#Whole Brain Segmentation)
-- [COVID-19 Segmentation](#COVID-19 Segmentation)
+- [Whole Brain Segmentation](#Whole-Brain-Segmentation)
+- [COVID-19 Segmentation](#COVID-19-Segmentation)
 
 
 ### Prerequisites
 
--Python 
+-Python <br/> 
 -PyTorch
 
 ### Training 
