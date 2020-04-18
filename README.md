@@ -69,11 +69,9 @@ python generate_prediction_COVID.py --data_path='your data path' --checkpoint_di
 python generate_prediction_COVID_Vol.py --data_path='your data path' --checkpoint_dir='path to the trained model' --model_name='best_model_Img_wts.pt'
 ```
 # Whole Brain Segmentation
-In this package we opt for MRI a publicly available datasets; (i) [22], which
-consists of 30 T1 MRI volumes; 15 volumes split into 3 labeled (∼500 slices),
-9 unlabeled (∼1500 slices), 3 validation (∼500 slices), and 15 testing volumes
-(∼2500 slices), (ii) IBSR [26], which consists of 18 T1 MRI volumes (∼2000
-slices), and (iii) CANDI [19] which consists of 13 T1 MRI volumes (∼1500 slices).
+Mean (Median) ± Std. of different evaluation metrics are reported on the MALC testing set for ROAM (ours) at different settings with comparison with different SSL methods and the baselines models. 
+<img src="pic_trulli.jpg" alt="Italian Trulli">
+
 # COVID-19 Segmentation
 
 ## Authors
