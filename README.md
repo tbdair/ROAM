@@ -8,66 +8,31 @@ Medical image segmentation is one of the major challenges addressed by machine l
 
 This repository contains a PyTorch code for implementing and training ROAM. 
 <br/> Also, this package provides trained models for MRI whole brain segmentation,  and CT COVID-19 lung segmentation. 
-- [Whole Brain Segmentation](#brain)
-- [COVID-19 Segmentation](#covid)
+- [Whole Brain Segmentation](#Whole Brain Segmentation)
+- [COVID-19 Segmentation](#COVID-19 Segmentation)
 
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+-Python 
+-PyTorch
 
-```
-Give examples
-```
+### Training 
+- To train our model in supervised manner for whole brain segmentation, run the following code.
+python train_ROAM_MALC_Supervised.py --data_path='your data path' --checkpoint_dir='path to save the trained model'
 
-### Installing
+### Evaluation
 
-A step by step series of examples that tell you how to get a development env running
+### Prediction 
 
-Say what the step will be
 
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-# brain
-# covid
+# Whole Brain Segmentation
+In this package we opt for MRI a publicly available datasets; (i) [22], which
+consists of 30 T1 MRI volumes; 15 volumes split into 3 labeled (∼500 slices),
+9 unlabeled (∼1500 slices), 3 validation (∼500 slices), and 15 testing volumes
+(∼2500 slices), (ii) IBSR [26], which consists of 18 T1 MRI volumes (∼2000
+slices), and (iii) CANDI [19] which consists of 13 T1 MRI volumes (∼1500 slices).
+# COVID-19 Segmentation
 
 ## Authors
 
