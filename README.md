@@ -70,7 +70,7 @@ python generate_prediction_COVID_Vol.py --data_path='your data path' --checkpoin
 ```
 # Whole Brain Segmentation
 Mean (Median) ± Std. of different evaluation metrics are reported on the MALC testing set for ROAM (ours) at different settings with comparison with different SSL methods and the baselines models. 
-<img src="pic_trulli.jpg" alt="Italian Trulli">
+<img src="images/dice_results.png" alt="Italian Trulli">
 
 # COVID-19 Segmentation
 
