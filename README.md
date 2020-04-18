@@ -26,9 +26,7 @@ This repository contains a PyTorch code for implementing and training ROAM.
 <br/> 
 ### Datasets
 **Whole Brain data**
-- [MALC](http://www.neuromorphometrics.com/2012_MICCAI_Challenge_Data.html) : consists of 30 T1 MRI volumes; 15 volumes split into 3 labeled (∼500 slices), 9 unlabeled (∼1500 slices), 3 validation (∼500 slices), and 15 testing volumes (∼2500 slices). <br/>
--The data conversion for MALC dataset is done as in [QuickNAT: Abhijit Guha Roy et al](https://github.com/ai-med/quickNAT_pytorch)
-<br/>
+- [MALC](http://www.neuromorphometrics.com/2012_MICCAI_Challenge_Data.html) : consists of 30 T1 MRI volumes; 15 volumes split into 3 labeled (∼500 slices), 9 unlabeled (∼1500 slices), 3 validation (∼500 slices), and 15 testing volumes (∼2500 slices). The data conversion for this dataset is done as in [QuickNAT: Abhijit Guha Roy et al](https://github.com/ai-med/quickNAT_pytorch) <br/>
 
 **COVID-19 data**
 - 80 CT slices of COVID-19: download data from [here](http://medicalsegmentation.com/covid19/)
@@ -53,12 +51,12 @@ python train_ROAM_Covid_Semi.py --data_path='your data path' --checkpoint_dir='p
 ```
 ### Trained models
 - Also, you can download already trained models as the following:-  <br/>
-- [roam_malc_sup](trainedmodels/raom_malc_sup.pt): our model trained on 15 vols. from MALC dataset on supervised manner for whole brain segmentation.
-- [roam_malc_smi_lyr2](trainedmodels/roam_malc_smi_lyr2.pt): our model trained on 3L/9U vols. from MALC dataset on semi-supervised manner for whole brain segmentation, the data is mixed-up at the second hidden layer.
-- [roam_malc_smi_lyrI1L](trainedmodels/roam_malc_smi_lyrI1L.pt): our model trained on 3L/9U vols. from MALC dataset on semi-supervised manner for whole brain segmentation, the data is mixed-up at the input, first and last hidden layers.
-- [roam_malc_smi_lyrI](trainedmodels/roam_malc_smi_lyrI.pt): our model trained on 3L/9U vols. from MALC dataset on semi-supervised manner for whole brain segmentation, the data is mixed-up at the input layer (MixMatch approach).
-- [roam_covid_sup](trainedmodels/roam_covid_sup.pt): our model trained on 80 images from 60 CT scans on supervised manner for COVID-19 lung segmentation. The used data is found [here](http://medicalsegmentation.com/covid19/) 
-- [roam_covid_semi](trainedmodels/roam_covid_semi.pt): our model trained on 80 images from 60 CT scans on semi-supervised manner for COVID-19 lung segmentation. The labeled data is found [here](http://medicalsegmentation.com/covid19/), the unlabeled data is found [here](https://github.com/UCSD-AI4H/COVID-CT/tree/master/Images-processed)
+- [roam_malc_sup](https://campowncloud.in.tum.de/index.php/s/UlRTmD7TR1cGitj): our model trained on 15 vols. from MALC dataset in supervised manner.
+- [roam_malc_smi_lyr2](https://campowncloud.in.tum.de/index.php/s/UlRTmD7TR1cGitj): our model trained on 3L/9U vols. from MALC dataset in semi-supervised manner, the data is mixed-up at the second hidden layer.
+- [roam_malc_smi_lyrI1L](https://campowncloud.in.tum.de/index.php/s/UlRTmD7TR1cGitj): our model trained on 3L/9U vols. from MALC dataset on semi-supervised manner, the data is mixed-up at the input, first and last hidden layers.
+- [roam_malc_smi_lyrI](https://campowncloud.in.tum.de/index.php/s/UlRTmD7TR1cGitj): our model trained on 3L/9U vols. from MALC dataset in semi-supervised manner, the data is mixed-up at the input layer (MixMatch approach).
+- [roam_covid_sup](https://campowncloud.in.tum.de/index.php/s/UlRTmD7TR1cGitj): our model trained on 80 images from 60 CT scans in supervised manner for COVID-19 lung segmentation. 
+- [roam_covid_semi](https://campowncloud.in.tum.de/index.php/s/UlRTmD7TR1cGitj): our model trained on 80 images from 60 CT scans in semi-supervised manner for COVID-19 lung segmentation. 
 
 ### Prediction 
 - To generate the predictions (brain segmentation).
