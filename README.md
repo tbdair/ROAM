@@ -4,6 +4,15 @@ Medical image segmentation is one of the major challenges addressed by machine l
 <br/> -- Link to the paper
 [https://arxiv.org/pdf/2003.09439.pdf](https://arxiv.org/pdf/2003.09439.pdf) 
 
+If you use our code, please cite:
+```
+@article{bdair2020roam,
+  title={ROAM: Random Layer Mixup for Semi-Supervised Learning in Medical Imaging},
+  author={Bdair, Tariq and Navab, Nassir and Albarqouni, Shadi},
+  journal={arXiv preprint arXiv:2003.09439},
+  year={2020}
+}
+```
 ## Getting Started
 
 This repository contains a PyTorch code for implementing and training ROAM. 
