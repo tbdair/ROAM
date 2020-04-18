@@ -43,10 +43,31 @@ python train_ROAM_Covid_Semi.py --data_path='your data path' --checkpoint_dir='p
 - [roam_covid_sup](trainedmodels/roam_covid_sup.pt): our model trained on 80 images from 60 CT scans on supervised manner for COVID-19 lung segmentation. The used data is found [here](http://medicalsegmentation.com/covid19/) 
 - [roam_covid_semi](trainedmodels/roam_covid_sup.pt): our model trained on 80 images from 60 CT scans on supervised manner for COVID-19 lung segmentation. The labeled data is found [here](http://medicalsegmentation.com/covid19/), the unlabeled data is found [here](https://github.com/UCSD-AI4H/COVID-CT/tree/master/Images-processed)
 ### Evaluation
-
+- To calculte the dice score (brain segmentation).
+```
+python calculate_dice.py --data_path='your data path' --checkpoint_dir='path to the trained modelL' --model_name='best_model_Img_wts.pt'
+```
+- To calculte the hausdorff and mean surface distances (brain segmentation models).
+```
+python calculateHD_MSD.py --data_path='your data path' --checkpoint_dir='path to the trained modelL' --model_name='best_model_Img_wts.pt'
+```
+- To calculte the dice score (COVID-19).
+```
+python calculate_dice_COVID.py --data_path='your data path' --checkpoint_dir='path to the trained modelL' --model_name='best_model_Img_wts.pt'
+```
 ### Prediction 
-
-
+- To generate the predictions (brain segmentation).
+```
+python generate_prediction.py --data_path='your data path' --checkpoint_dir='path to the trained modelL' --model_name='best_model_Img_wts.pt'
+```
+- To generate the predictions (COVID-19 segmentation for CT individual slices).
+```
+python generate_prediction_COVID.py --data_path='your data path' --checkpoint_dir='path to the trained modelL' --model_name='best_model_Img_wts.pt'
+```
+- To generate the predictions (COVID-19 segmentation for CT volume).
+```
+python generate_prediction_COVID_Vol.py --data_path='your data path' --checkpoint_dir='path to the trained modelL' --model_name='best_model_Img_wts.pt'
+```
 # Whole Brain Segmentation
 In this package we opt for MRI a publicly available datasets; (i) [22], which
 consists of 30 T1 MRI volumes; 15 volumes split into 3 labeled (∼500 slices),
