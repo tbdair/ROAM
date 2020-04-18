@@ -19,8 +19,9 @@ This repository contains a PyTorch code for implementing and training ROAM.
 
 ### Training 
 - To train our model in supervised manner for whole brain segmentation, run the following code.
+```
 python train_ROAM_MALC_Supervised.py --data_path='your data path' --checkpoint_dir='path to save the trained model'
-
+```
 ### Evaluation
 
 ### Prediction 
