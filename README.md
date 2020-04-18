@@ -85,15 +85,15 @@ python calculateHD_MSD.py --data_path='your data path' --checkpoint_dir='path to
 python calculate_dice_COVID.py --data_path='your data path' --checkpoint_dir='path to the trained model' --model_name='best_model_Img_wts.pt'
 ```
 # Whole Brain Segmentation
-**Quantitative results on MALC dataset for whole brain segmentation**
+## Quantitative results on MALC dataset for whole brain segmentation
 <img src="images/dice_results.png"> <br/>
 <img src="images/dice_results_sup.png"> <br/>
-**Qualitative results on MALC/IBSR/CANDI datasets for whole brain segmentation**
+## Qualitative results on MALC/IBSR/CANDI datasets for whole brain segmentation
 <img src="images/QaulitativeAll.png">
 
 # COVID-19 Segmentation
-**Sample predictions on CT COVID-19** <br/>
-**Our models (S) and (SS) are trained in supervised and semi-supervised manners respectively. The labeled data is found [here](http://medicalsegmentation.com/covid19/), the unlabeled data is found [here](https://github.com/UCSD-AI4H/COVID-CT/tree/master/Images-processed)** <br/>
+## Sample predictions on CT COVID-19 <br/>
+**Our models (S) and (SS) are trained in supervised and semi-supervised manners respectively.**
 <img src="images/COVID-19.jpeg">
 ## Authors
 
