@@ -51,9 +51,9 @@ python train_ROAM_Covid_Semi.py --data_path='your data path' --checkpoint_dir='p
 ```
 ### Trained models
 - Also, you can download already trained models as the following:-  <br/>
-- [roam_malc_sup](https://campowncloud.in.tum.de/index.php/s/UlRTmD7TR1cGitj): our model trained on 15 vols. from MALC dataset in supervised manner.
+- [roam_malc_sup](https://campowncloud.in.tum.de/index.php/s/UlRTmD7TR1cGitj): our model trained on 15 vols. from MALC dataset in supervised mannerو the data is mixed-up at the first, second, and last hidden layers.
 - [roam_malc_smi_lyr2](https://campowncloud.in.tum.de/index.php/s/UlRTmD7TR1cGitj): our model trained on 3L/9U vols. from MALC dataset in semi-supervised manner, the data is mixed-up at the second hidden layer.
-- [roam_malc_smi_lyrI1L](https://campowncloud.in.tum.de/index.php/s/UlRTmD7TR1cGitj): our model trained on 3L/9U vols. from MALC dataset on semi-supervised manner, the data is mixed-up at the input, first and last hidden layers.
+- [roam_malc_smi_lyrI1L](https://campowncloud.in.tum.de/index.php/s/UlRTmD7TR1cGitj): our model trained on 3L/9U vols. from MALC dataset on semi-supervised manner, the data is mixed-up at the input layer and first and last hidden layers.
 - [roam_malc_smi_lyrI](https://campowncloud.in.tum.de/index.php/s/UlRTmD7TR1cGitj): our model trained on 3L/9U vols. from MALC dataset in semi-supervised manner, the data is mixed-up at the input layer (MixMatch approach).
 - [roam_covid_sup](https://campowncloud.in.tum.de/index.php/s/UlRTmD7TR1cGitj): our model trained on 80 images from 60 CT scans in supervised manner for COVID-19 lung segmentation. 
 - [roam_covid_semi](https://campowncloud.in.tum.de/index.php/s/UlRTmD7TR1cGitj): our model trained on 80 images from 60 CT scans in semi-supervised manner for COVID-19 lung segmentation. 
