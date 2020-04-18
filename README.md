@@ -41,7 +41,7 @@ python train_ROAM_Covid_Semi.py --data_path='your data path' --checkpoint_dir='p
 - [roam_malc_smi_lyrI1L](trainedmodels/roam_malc_smi_lyrI1L.pt): our model trained on 3L/9U vols. from MALC dataset on semi-supervised manner for whole brain segmentation, the data is mixed-up at the input, first and last hidden layers.
 - [roam_malc_smi_lyrI](trainedmodels/roam_malc_smi_lyrI.pt): our model trained on 3L/9U vols. from MALC dataset on semi-supervised manner for whole brain segmentation, the data is mixed-up at the input layer (MixMatch approach).
 - [roam_covid_sup](trainedmodels/roam_covid_sup.pt): our model trained on 80 images from 60 CT scans on supervised manner for COVID-19 lung segmentation. The used data is found [here](http://medicalsegmentation.com/covid19/) 
-- [roam_covid_semi](trainedmodels/roam_covid_sup.pt): our model trained on 80 images from 60 CT scans on supervised manner for COVID-19 lung segmentation. The labeled data is found [here](http://medicalsegmentation.com/covid19/), the unlabeled data is found [here](https://github.com/UCSD-AI4H/COVID-CT/tree/master/Images-processed)
+- [roam_covid_semi](trainedmodels/roam_covid_sup.pt): our model trained on 80 images from 60 CT scans on semi-supervised manner for COVID-19 lung segmentation. The labeled data is found [here](http://medicalsegmentation.com/covid19/), the unlabeled data is found [here](https://github.com/UCSD-AI4H/COVID-CT/tree/master/Images-processed)
 ### Evaluation
 - To calculte the dice score (brain segmentation).
 ```
@@ -76,7 +76,7 @@ python generate_prediction_COVID_Vol.py --data_path='your data path' --checkpoin
 
 # COVID-19 Segmentation
 ### Sample predictions on CT COVID-19 
-Our model trained on 80 images from 60 CT scans on supervised manner for COVID-19 lung segmentation. The labeled data is found [here](http://medicalsegmentation.com/covid19/), the unlabeled data is found [here](https://github.com/UCSD-AI4H/COVID-CT/tree/master/Images-processed) <br/>
+Our models (S) and (SS) are trained in supervised and semi-supervised manners respectively. The labeled data is found [here](http://medicalsegmentation.com/covid19/), the unlabeled data is found [here](https://github.com/UCSD-AI4H/COVID-CT/tree/master/Images-processed) <br/>
 <img src="images/COVID-19.jpeg">
 ## Authors
 
