@@ -34,6 +34,10 @@ python train_ROAM_Covid_Supervised.py --data_path='your data path' --checkpoint_
 ```
 python train_ROAM_Covid_Semi.py --data_path='your data path' --checkpoint_dir='path to save the trained model'
 ```
+### Trained models
+- Also, you can download already trained models as the following:-  <br/>
+#### Whole brain segmentation 
+- ROAM model trained on 15 vol. from MALC dataset on supervised manner [roam_malc_sup](trainedmodels/raom_malc_sup.pt)
 ### Evaluation
 
 ### Prediction 
