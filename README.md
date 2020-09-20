@@ -88,15 +88,16 @@ python calculate_dice_COVID.py --data_path='your data path' --checkpoint_dir='pa
 ## Quantitative results on MALC dataset for whole brain segmentation
 <img src="images/dice_results.png"> <br/>
 <img src="images/dice_results_sup.png"> <br/>
-<img src="images/Predictions1004_3_tab20c.gif"> <br/>
 ## Qualitative results on MALC/IBSR/CANDI datasets for whole brain segmentation
-<img src="images/QaulitativeAll.png">
+<img src="images/QaulitativeAll.png"> <br/>
+<img src="images/Predictions1004_3_tab20c.gif"> <br/>
 
 # COVID-19 Segmentation
 ***Not validated for clinical use*** <br/> 
 ## Sample predictions on CT COVID-19 <br/>
 **Our models (S) and (SS) are trained in supervised and semi-supervised manners respectively.**
 <img src="images/COVID-19.jpeg">
+<img src="images/LungInf_Lower2V_ROAM_0I1L_Vol_Seg_tab20c.gif"> <br/>
 ## Authors
 
 * [**Tariq Bdair**](http://campar.in.tum.de/Main/TariqBdair)
