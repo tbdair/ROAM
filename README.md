@@ -88,6 +88,7 @@ python calculate_dice_COVID.py --data_path='your data path' --checkpoint_dir='pa
 ## Quantitative results on MALC dataset for whole brain segmentation
 <img src="images/dice_results.png"> <br/>
 <img src="images/dice_results_sup.png"> <br/>
+<img src="images/Predictions1004_3_tab20c.gif"> <br/>
 ## Qualitative results on MALC/IBSR/CANDI datasets for whole brain segmentation
 <img src="images/QaulitativeAll.png">
 
