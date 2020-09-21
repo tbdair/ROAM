@@ -91,11 +91,7 @@ python calculate_dice_COVID.py --data_path='your data path' --checkpoint_dir='pa
 ## Qualitative results on MALC/IBSR/CANDI datasets for whole brain segmentation
 <img src="images/QaulitativeAll.png"> <br/>
 ## Sample segmentation of a brain case 
-<video width="320" height="240" autoplay>
-  <source src="images/Brain1.mp4" type="video/mp4"> 
-  Your browser does not support the video tag.
-</video>
-
+<img src="images/Brain1.gif"> <br/>
 # COVID-19 Segmentation
 ***Not validated for clinical use*** <br/> 
 ## Sample predictions on CT COVID-19 <br/>
