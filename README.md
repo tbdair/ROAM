@@ -98,9 +98,7 @@ python calculate_dice_COVID.py --data_path='your data path' --checkpoint_dir='pa
 **Our models (S) and (SS) are trained in supervised and semi-supervised manners respectively.**
 <img src="images/COVID-19.jpeg">
 ## Sample segmentation of a lung case 
-<video autoplay>
-  <source src="ROAM_Lung.mp4" type="video/mp4"> 
-</video>
+<img src="images/ROAM_Lung.gif">
 ## Authors
 
 * [**Tariq Bdair**](http://campar.in.tum.de/Main/TariqBdair)
