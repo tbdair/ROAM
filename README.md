@@ -97,7 +97,8 @@ python calculate_dice_COVID.py --data_path='your data path' --checkpoint_dir='pa
 ## Sample predictions on CT COVID-19 <br/>
 **Our models (S) and (SS) are trained in supervised and semi-supervised manners respectively.**
 <img src="images/COVID-19.jpeg">
-## Sample segmentation of a lung case 
+## Comparison of COVID-19 segmentation of Unet (left) and ROAM (right)
+<img src="images/Unet_Lung.gif">
 <img src="images/ROAM_Lung.gif"> </br>
 ## Authors
 
