@@ -91,7 +91,7 @@ python calculate_dice_COVID.py --data_path='your data path' --checkpoint_dir='pa
 ## Qualitative results on MALC/IBSR/CANDI datasets for whole brain segmentation
 <img src="images/QaulitativeAll.png"> <br/>
 ## Comparison of brain segmentation of Unet (left) and ROAM (right) 
-<img src="images/Unet_Brain.gif"><img src="images/ROAM_Brain.gif"> <br/>
+<img src="images/Unet_Brain2.gif"><img src="images/ROAM_Brain2.gif"> <br/>
 # COVID-19 Segmentation
 ***Not validated for clinical use*** <br/> 
 ## Sample predictions on CT COVID-19 <br/>
