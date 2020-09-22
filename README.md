@@ -98,8 +98,7 @@ python calculate_dice_COVID.py --data_path='your data path' --checkpoint_dir='pa
 **Our models (S) and (SS) are trained in supervised and semi-supervised manners respectively.**
 <img src="images/COVID-19.jpeg">
 ## Comparison of COVID-19 segmentation of Unet (left) and ROAM (right)
-<img src="images/Unet_Lung.gif">
-<img src="images/ROAM_Lung.gif"> </br>
+<img src="images/Unet_Lung.gif"><img src="images/ROAM_Lung.gif"> </br>
 ## Authors
 
 * [**Tariq Bdair**](http://campar.in.tum.de/Main/TariqBdair)
