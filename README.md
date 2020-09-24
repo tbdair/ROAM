@@ -2,15 +2,25 @@
 ### [Tariq Bdair](http://campar.in.tum.de/Main/TariqBdair), [Nassir Navab](http://campar.in.tum.de/Main/NassirNavab), [Shadi Albarqouni](https://albarqouni.github.io/)
 Medical image segmentation is one of the major challenges addressed by machine learning methods. Yet, deep learning methods profoundly depend on a huge amount of annotated data which is time-consuming and costly. Though semi-supervised learning methods approach this problem by leveraging an abundant amount of unlabeled data along with a small amount of labeled data in the training process. Recently, MixUp regularizer has been successfully introduced to semi-supervised learning methods showing superior performance. MixUp augments the model with new data points through linear interpolation of the data at the input space. In this paper, we argue that this option is limited, instead, we propose ROAM, a RandOm lAyer Mixup, which encourages the network to be less confident for interpolated data points at randomly selected space. Hence, avoids over-fitting and enhances the generalization ability. We validate our method on publicly available datasets on whole-brain image segmentation (MALC) achieving state-of-the-art results in fully supervised (89.8%) and semi-supervised (87.2%) settings with relative improvement up to 2.75% and 16.73%, respectively.
 
-If you found our code useful, please cite:
-```
-@article{bdair2020roam,
-  title={ROAM: Random Layer Mixup for Semi-Supervised Learning in Medical Imaging},
-  author={Bdair, Tariq and Navab, Nassir and Albarqouni, Shadi},
-  journal={arXiv preprint arXiv:2003.09439},
-  year={2020}
-}
-```
+# Whole Brain Segmentation
+<!--
+## Quantitative results on MALC dataset for whole brain segmentation
+<img src="images/dice_results.png"> <br/>
+<img src="images/dice_results_sup.png"> <br/>
+-->
+## Qualitative results on MALC/IBSR/CANDI datasets for whole brain segmentation
+<img src="images/QaulitativeAll.png"> <br/>
+## Comparison of brain segmentation of Unet (left) and ROAM (right) 
+<img src="images/Unet_Brain.gif"><img src="images/ROAM_Brain.gif"> </br>
+# COVID-19 Segmentation
+***Not validated for clinical use*** <br/> 
+## Sample predictions on CT COVID-19 <br/>
+**Our models (S) and (SS) are trained in supervised and semi-supervised manners respectively.**
+<img src="images/COVID-19.jpeg">
+## Comparison of COVID-19 segmentation of Unet (left) and ROAM (right)
+<img src="images/Unet_Lung.gif"><img src="images/ROAM_Lung.gif"> </br>
+
+
 ## Getting Started
 
 This repository contains a PyTorch code for implementing and training ROAM. 
@@ -84,27 +94,16 @@ python calculateHD_MSD.py --data_path='your data path' --checkpoint_dir='path to
 ```
 python calculate_dice_COVID.py --data_path='your data path' --checkpoint_dir='path to the trained model' --model_name='best_model_Img_wts.pt'
 ```
-# Whole Brain Segmentation
-## Quantitative results on MALC dataset for whole brain segmentation
-<img src="images/dice_results.png"> <br/>
-<img src="images/dice_results_sup.png"> <br/>
-## Qualitative results on MALC/IBSR/CANDI datasets for whole brain segmentation
-<img src="images/QaulitativeAll.png"> <br/>
-## Comparison of brain segmentation of Unet (left) and ROAM (right) 
-<img src="images/Unet_Brain.gif"><img src="images/ROAM_Brain.gif"> </br>
-# COVID-19 Segmentation
-***Not validated for clinical use*** <br/> 
-## Sample predictions on CT COVID-19 <br/>
-**Our models (S) and (SS) are trained in supervised and semi-supervised manners respectively.**
-<img src="images/COVID-19.jpeg">
-## Comparison of COVID-19 segmentation of Unet (left) and ROAM (right)
-<img src="images/Unet_Lung.gif"><img src="images/ROAM_Lung.gif"> </br>
-## Authors
 
-* [**Tariq Bdair**](http://campar.in.tum.de/Main/TariqBdair)
-* [**Dr. Shadi Albarqouni**](https://albarqouni.github.io/)
-
-See also other works from [**MedIA**](http://campar.in.tum.de/Chair/ResearchIssueMedicalImage) group.
+If you found our code useful, please cite:
+```
+@article{bdair2020roam,
+  title={ROAM: Random Layer Mixup for Semi-Supervised Learning in Medical Imaging},
+  author={Bdair, Tariq and Navab, Nassir and Albarqouni, Shadi},
+  journal={arXiv preprint arXiv:2003.09439},
+  year={2020}
+}
+```
 
 ## License
 
